@@ -12,7 +12,7 @@ def San(request):
         c= request.POST.get("empID")
         e = Sanjana(name=a,address=b,empID=c)
         e.save()
-        print(a,b,c)
+        print(a)
    else:
 
          return render(request,"page1.html",context={})
